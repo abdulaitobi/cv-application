@@ -9,11 +9,11 @@ function App() {
     <>
       <h1 id='title'>CV generator</h1>
       <p>First fill in your personal information <br /> Ensure you review the information you enter</p>
-      <div  id='general-info'>
+      <div  id='content'>
         <GeneralInfo />
         <PracticalExperience />
+        <span id='save-button'>Save</span>
       </div>
-      <span id='save-button'>Save</span>
     </>
   )
 }
