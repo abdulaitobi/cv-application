@@ -10,7 +10,7 @@ function savePersonalInfo() {
         state: document.getElementById('state').value,
         zip: document.getElementById('zip').value
     }
-    if (!personalInfo.firstName || !personalInfo.lastName || !personalInfo.email) {
+    if (!personalInfo.firstName || !personalInfo.lastName || !personalInfo.email || !personalInfo.phone || !personalInfo.city || !personalInfo.state || !personalInfo.zip) {
         alert('Please fill in all required fields.');
         return;
     }
@@ -37,13 +37,13 @@ function GeneralInfo() {
             <input type='text' id='last-name' name='last-name' value={lastname} onChange={(e) => setLastName(e.target.value)}/>
             <label htmlFor='email'>*Email:</label>
             <input type='email' id='email' name='email' value={email} onChange={(e) => setEmail(e.target.value)}/>
-            <label htmlFor='phone'>Phone:</label>
+            <label htmlFor='phone'>*Phone:</label>
             <input type='tel' id='phone' name='phone' value={phone} onChange={(e) => setPhone(e.target.value)}/>
-            <label htmlFor='city'>City:</label>
+            <label htmlFor='city'>*City:</label>
             <input type='text' id='city' name='city' value={city} onChange={(e) => setCity(e.target.value)}/>
-            <label htmlFor='state'>State:</label>
+            <label htmlFor='state'>*State:</label>
             <input type='text' id='state' name='state' value={state} onChange={(e) => setState(e.target.value)}/>
-            <label htmlFor='zip'>Zip:</label>
+            <label htmlFor='zip'>*Zip:</label>
             <input type='text' id='zip' name='zip' value={zip} onChange={(e) => setZip(e.target.value)}/>
             <input type="button" value="Save" onClick={savePersonalInfo}/>
         </form>

@@ -13,19 +13,19 @@
 #content {
   font-size: 20px;
   color: aliceblue;
-  width: 4fr;
+  width: 5fr;
   border: 1px solid #ccc;
   border-radius: 8px;
-  padding: 0px 50px;
+  padding: 50px 50px;
 }
 
-.general-info-form {
+.general-info-form, .practical-experience-form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.general-info-form input {
+.general-info-form input, .practical-experience-form input {
   margin: 0.5rem 0;
   padding: 0.5rem;
   border: 1px solid #ccc;
@@ -33,16 +33,11 @@
   width: 100%;
 }
 
-#save-button {
+#submit-button {
   background-color: #4CAF50;
   color: white;
   padding: 10px 20px;
   border: none;
   border-radius: 4px;
-}
-
-.practical-experience{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  cursor: pointer;
 }
